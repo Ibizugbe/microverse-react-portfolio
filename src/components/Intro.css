@@ -1,0 +1,89 @@
+#intro {
+  background-color: white;
+  padding-top: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.intro-container {
+  background-size: calc(100%);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  border-bottom-left-radius: 80px;
+  padding-right: 30px;
+  padding-top: 20px;
+  background-color: white;
+  padding-bottom: 200px;
+}
+
+.greetings {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #172b4d;
+  padding-right: 10%;
+  margin-bottom: 0;
+}
+
+.intro-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.connect {
+  color: #4859eb;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.connect-links {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.social-icons {
+  height: 22px;
+  width: 22px;
+  padding-right: 15px;
+}
+
+.social-icons:hover {
+  transform: scale(1.2);
+  transform-origin: 1%;
+  transition-duration: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .intro-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 250px;
+    background-color: white;
+    border-bottom-left-radius: 150px;
+    padding-right: 150px;
+    padding-top: 160px;
+    padding-bottom: 200px;
+  }
+
+  #intro {
+    background-color: white;
+    border-bottom-left-radius: 150px;
+  }
+
+  .greetings {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    padding-right: 400px;
+    min-width: 400px;
+  }
+
+  .intro-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-right: 100px;
+  }
+}
