@@ -1,6 +1,10 @@
 import React from "react";
 import data from "../data/data.js";
 import "./Projects.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Projects = () => {
   // projects file
@@ -10,7 +14,11 @@ const Projects = () => {
   return (
     <section id="projects" className="px-5 lg:px-48">
       {project.map((items, index) => (
-        <div className="project rounded-xl grid md:grid-cols-2 grid-cols-1 p-9 bg-white mt-5 md:mt-48">
+        <div
+          className="project rounded-xl grid md:grid-cols-2 grid-cols-1 p-9 bg-white mt-5 md:mt-48"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div key={index} className="project-image">
             <img src={items.image} alt="project-image" />
           </div>
