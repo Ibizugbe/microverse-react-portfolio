@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section id="projects" className="px-5 lg:px-48">
       {project.map((items, index) => (
-        <div className="project rounded-xl grid md:grid-cols-2 grid-cols-1 p-9 bg-white mt-20 md:mt-48">
+        <div className="project rounded-xl grid md:grid-cols-2 grid-cols-1 p-9 bg-white mt-5 md:mt-48">
           <div key={index} className="project-image">
             <img src={items.image} alt="project-image" />
           </div>
