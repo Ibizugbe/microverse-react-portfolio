@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
+import { motion } from "framer-motion";
 
 const Projects = () => {
   // projects file
@@ -32,7 +33,16 @@ const Projects = () => {
                 </span>
               ))}
             </div>
-            <button className="btn">See Project</button>
+            <div>
+              <motion.button
+                className="btn"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => null}
+              >
+                See Project
+              </motion.button>
+            </div>
           </div>
         </div>
       ))}
