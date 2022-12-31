@@ -13,7 +13,7 @@ const Projects = () => {
   // setProject(data);
 
   return (
-    <section id="projects" className="px-5 lg:px-48">
+    <section id="projects" className="px-5 pb-5 lg:px-48">
       {project.map((items, index) => (
         <motion.div
           className="project rounded-xl grid md:grid-cols-2 grid-cols-1 p-9 bg-white mt-5 md:mt-48"
