@@ -1,4 +1,9 @@
-import React from "react";
+import { useState, Fragment } from "react";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 import "./Skills.css";
 import medium from "../Assets/Icons/medium-vector.svg";
 import linkedin from "../Assets/Icons/linkedin-vector.svg";
@@ -17,86 +22,106 @@ import tailwind from "../Assets/languages/tailwind.png";
 import html from "../Assets/languages/html.png";
 
 function Skills() {
+  const [open, setOpen] = useState(0);
+
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
+
+  const customAnimation = {
+    mount: { scale: 1 },
+    unmount: { scale: 0.9 },
+  };
+
   return (
-    <section id="skills">
-      <div class="about-container">
-        <div class="about">
-          <h1 class="about-header">About Myself</h1>
-          <h1 class="about-text">
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
-          </h1>
-          <p class="connect">LET’S CONNECT</p>
-          <ul className="connect-links animate__animated animate__bounce">
-            <li>
-              <a href="https://twitter.com/AbrahamIbizugbe">
-                <img src={twitter} alt="twitter" className="social-icons" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/abrahamibizugbe/">
-                <img src={linkedin} alt="linkedin" className="social-icons" />
-              </a>
-            </li>
-            <li>
-              <a href="https://medium.com/@abrahamibizugbe">
-                <img src={medium} alt="medium" className="social-icons" />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Ibizugbe">
-                <img src={github} alt="gitHub" className="social-icons" />
-              </a>
-            </li>
-            <li>
-              <a href="https://angel.co/u/abraham-ibizugbe">
-                <img src={angelist} alt="angelist" className="social-icons" />
-              </a>
-            </li>
-          </ul>
-          <button class="btn project-link" type="button">
-            Get my resume
-          </button>
-        </div>
-        <div class="language-container">
-          <ul class="about-languages">
-            <li>
-              <div class="language-header-container">
-                <h2 class="language-header">Languages</h2>
-                <img src="./Assets/Icons/icon-down.png" alt="null" />
-              </div>
-              <ul class="my-language">
-                <li class="my-language-container">
-                  <img
-                    src="./Assets/Icons/javascript-icon.png"
-                    alt="javaScript"
-                  />
-                  <p class="my-language-text">javaScript</p>
-                </li>
-                <li class="my-language-container">
-                  <img src="./Assets/Icons/css-icon.png" alt="CSS" />
-                  <p class="my-language-text">CSS</p>
-                </li>
-                <li class="my-language-container">
-                  <img src="./Assets/Icons/html-icon.png" alt="HTML" />
-                  <p class="my-language-text">HTML</p>
-                </li>
-              </ul>
-            </li>
-            <li class="language-header-container frameworks">
-              <h3 class="language-header">Frameworks</h3>
-              <img src="./Assets/Icons/icon-right.png" alt="null" />
-            </li>
-            <li class="language-header-container skills">
-              <h3 class="language-header">Skills</h3>
-              <img src="./Assets/Icons/icon-right.png" alt="null" />
-            </li>
-          </ul>
-        </div>
+    <div class="about-container">
+      <div class="about">
+        <h1 class="about-header">About Myself</h1>
+        <h1 class="about-text">
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
+        </h1>
+        <p class="connect">LET’S CONNECT</p>
+        <ul className="connect-links animate__animated animate__bounce">
+          <li>
+            <a href="https://twitter.com/AbrahamIbizugbe">
+              <img src={twitter} alt="twitter" className="social-icons" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abrahamibizugbe/">
+              <img src={linkedin} alt="linkedin" className="social-icons" />
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@abrahamibizugbe">
+              <img src={medium} alt="medium" className="social-icons" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Ibizugbe">
+              <img src={github} alt="gitHub" className="social-icons" />
+            </a>
+          </li>
+          <li>
+            <a href="https://angel.co/u/abraham-ibizugbe">
+              <img src={angelist} alt="angelist" className="social-icons" />
+            </a>
+          </li>
+        </ul>
+        <button class="btn project-link" type="button">
+          Get my resume
+        </button>
       </div>
-    </section>
+      <div class="language-container">
+        <Fragment>
+          <Accordion open={open === 1} animate={customAnimation}>
+            <AccordionHeader
+              onClick={() => handleOpen(1)}
+              className="text-4xl font-normal py-10"
+            >
+              Languages
+            </AccordionHeader>
+            <AccordionBody>
+              We&apos;re not always in the position that we want to be at.
+              We&apos;re constantly growing. We&apos;re constantly making
+              mistakes. We&apos;re constantly trying to express ourselves and
+              actualize our dreams.
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 2} animate={customAnimation}>
+            <AccordionHeader
+              onClick={() => handleOpen(2)}
+              className="text-4xl font-normal py-10"
+            >
+              Frameworks
+            </AccordionHeader>
+            <AccordionBody>
+              We&apos;re not always in the position that we want to be at.
+              We&apos;re constantly growing. We&apos;re constantly making
+              mistakes. We&apos;re constantly trying to express ourselves and
+              actualize our dreams.
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 3} animate={customAnimation}>
+            <AccordionHeader
+              onClick={() => handleOpen(3)}
+              className="text-4xl font-normal py-10"
+            >
+              Skills
+            </AccordionHeader>
+            <AccordionBody>
+              We&apos;re not always in the position that we want to be at.
+              We&apos;re constantly growing. We&apos;re constantly making
+              mistakes. We&apos;re constantly trying to express ourselves and
+              actualize our dreams.
+            </AccordionBody>
+          </Accordion>
+        </Fragment>
+      </div>
+    </div>
   );
 }
 

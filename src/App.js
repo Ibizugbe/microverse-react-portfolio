@@ -1,9 +1,9 @@
-import './App.css';
-import Contact from './components/Contact';
-import Intro from './components/Intro';
-import Navbar from './components/Navbar';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
+import "./App.css";
+import Contact from "./components/Contact";
+import Intro from "./components/Intro";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -14,8 +14,10 @@ function App() {
       <main>
         <Intro />
         <Projects />
-        <Skills />
-        <Contact />
+        <section id="about-section">
+          <Skills />
+          <Contact />
+        </section>
       </main>
     </>
   );
