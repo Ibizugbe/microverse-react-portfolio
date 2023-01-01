@@ -16,13 +16,13 @@ h1 {
   background-color: #21aeca;
 }
 
-.accordion-title:hover {
-  background-color: #3ab4cc;
-}
-
 .accordion-title,
 .accordion-content {
   padding: 1rem;
+}
+
+.accordion-title:hover {
+  background-color: #3ab4cc;
 }
 
 .accordion-content {
