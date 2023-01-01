@@ -1,9 +1,5 @@
-import { useState, Fragment } from "react";
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
+import { useState } from "react";
+
 import "./Skills.css";
 import medium from "../Assets/Icons/medium-vector.svg";
 import linkedin from "../Assets/Icons/linkedin-vector.svg";
@@ -20,19 +16,10 @@ import rails from "../Assets/languages/rails.png";
 import react from "../Assets/languages/react.png";
 import tailwind from "../Assets/languages/tailwind.png";
 import html from "../Assets/languages/html.png";
+import Accordion from "./Accordion";
+import { accordionData } from "../data/accordionData";
 
 function Skills() {
-  const [open, setOpen] = useState(0);
-
-  const handleOpen = (value) => {
-    setOpen(open === value ? 0 : value);
-  };
-
-  const customAnimation = {
-    mount: { scale: 1 },
-    unmount: { scale: 0.9 },
-  };
-
   return (
     <div class="about-container">
       <div class="about">
@@ -76,50 +63,11 @@ function Skills() {
         </button>
       </div>
       <div class="language-container">
-        <Fragment>
-          <Accordion open={open === 1} animate={customAnimation}>
-            <AccordionHeader
-              onClick={() => handleOpen(1)}
-              className="text-4xl font-normal py-10"
-            >
-              Languages
-            </AccordionHeader>
-            <AccordionBody>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 2} animate={customAnimation}>
-            <AccordionHeader
-              onClick={() => handleOpen(2)}
-              className="text-4xl font-normal py-10"
-            >
-              Frameworks
-            </AccordionHeader>
-            <AccordionBody>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 3} animate={customAnimation}>
-            <AccordionHeader
-              onClick={() => handleOpen(3)}
-              className="text-4xl font-normal py-10"
-            >
-              Skills
-            </AccordionHeader>
-            <AccordionBody>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
-            </AccordionBody>
-          </Accordion>
-        </Fragment>
+        <div className="accordion">
+          {accordionData.map(({ title, content }) => (
+            <Accordion title={title} content={content} />
+          ))}
+        </div>
       </div>
     </div>
   );
