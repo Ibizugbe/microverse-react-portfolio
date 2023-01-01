@@ -17,7 +17,7 @@ import react from "../Assets/languages/react.png";
 import tailwind from "../Assets/languages/tailwind.png";
 import html from "../Assets/languages/html.png";
 import Accordion from "./Accordion";
-import { accordionData } from "../data/accordionData";
+import accordionData from "../data/accordionData";
 
 function Skills() {
   return (
