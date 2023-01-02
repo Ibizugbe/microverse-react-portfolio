@@ -6,16 +6,7 @@ import linkedin from "../Assets/Icons/linkedin-vector.svg";
 import twitter from "../Assets/Icons/twitter-vector.svg";
 import github from "../Assets/Icons/github-vector.svg";
 import angelist from "../Assets/Icons/angelist-vector.svg";
-import bootstrap from "../Assets/languages/bootstrap.png";
-import css from "../Assets/languages/css.png";
-import firebase from "../Assets/languages/firebase.png";
-import githubLang from "../Assets/languages/github.png";
-import javascript from "../Assets/languages/javascript.png";
-import ruby from "../Assets/languages/ruby.png";
-import rails from "../Assets/languages/rails.png";
-import react from "../Assets/languages/react.png";
-import tailwind from "../Assets/languages/tailwind.png";
-import html from "../Assets/languages/html.png";
+import resume from "../Assets/resume/my_Resume.pdf";
 import Accordion from "./Accordion";
 import accordionData from "../data/accordionData";
 
@@ -58,9 +49,11 @@ function Skills() {
             </a>
           </li>
         </ul>
-        <button class="btn project-link" type="button">
-          Get my resume
-        </button>
+        <a target="_blank" href={resume} download>
+          <button class="btn project-link" type="button">
+            Get my resume
+          </button>
+        </a>
       </div>
       <div class="language-container">
         <div className="accordion">
