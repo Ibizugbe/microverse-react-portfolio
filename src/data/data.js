@@ -52,7 +52,7 @@ const data = [
     name: 'CarValley',
     image: CarValley,
     github: 'https://github.com/Ibizugbe/car-valley-backend',
-    live: '/',
+    live: 'https://github.com/Ibizugbe/car-valley-backend',
     description:
       'Car valley is a full-stack web application that allows its users to book cars online, the frontend of the application was built with React js and Redux and we used Ruby on Rails in the backend to be able to generate at the end an API that the frontend uses',
     skills: ['HTML', 'CSS', 'React', 'Redux', 'Ruby', 'Rails'],

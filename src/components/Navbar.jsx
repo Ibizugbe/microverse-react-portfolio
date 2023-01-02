@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
@@ -17,34 +18,29 @@ function Navbar() {
   };
   return (
     <nav className="nav">
-      <a href="/" className="nav__brand">
+      <Link to="intro" smooth duration={500} className="nav__brand">
         AIO
-      </a>
+      </Link>
       <ul className={active}>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <Link to="intro" smooth duration={500}>
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <Link to="about" smooth duration={500}>
             About
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
-            Portfolio
-          </a>
+          <Link to="projects" smooth duration={500}>
+            Projects
+          </Link>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <Link to="skills" smooth duration={500}>
             Skills
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>

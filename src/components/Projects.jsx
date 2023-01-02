@@ -13,7 +13,7 @@ const Projects = () => {
   // setProject(data);
 
   return (
-    <section id="projects" className="px-5 lg:px-48">
+    <section id="projects" className="px-5 pb-5 lg:px-48">
       {project.map((items, index) => (
         <motion.div
           className="project rounded-xl grid md:grid-cols-2 grid-cols-1 p-9 bg-white mt-5 md:mt-48"
@@ -34,15 +34,28 @@ const Projects = () => {
                 </span>
               ))}
             </div>
-            <div>
-              <motion.button
-                className="btn"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => null}
-              >
-                See Project
-              </motion.button>
+            <div className="flex">
+              <a href={items.live}>
+                <motion.button
+                  className="btn"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={() => null}
+                >
+                  See Live
+                </motion.button>
+              </a>
+
+              <a href={items.github}>
+                <motion.button
+                  className="btn ml-5"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={() => null}
+                >
+                  See source
+                </motion.button>
+              </a>
             </div>
           </div>
         </motion.div>

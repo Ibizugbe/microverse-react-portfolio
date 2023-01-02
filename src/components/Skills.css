@@ -1,0 +1,134 @@
+.about {
+  padding-right: 29px;
+  padding-left: 29px;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  border-top-right-radius: 50px;
+}
+
+.about-header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  padding-right: 50%;
+}
+
+#about-section {
+  background-color: white;
+  border-top-right-radius: 80px;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #344563;
+  font-weight: 400;
+}
+
+.language-container {
+  padding: 0 20px 30px 20px;
+}
+
+.language-header {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  display: inline;
+}
+
+.about-languages {
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+.my-language {
+  margin-bottom: 0;
+  padding: 0 20px 0 10px;
+}
+
+.my-language-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #253858;
+  padding-left: 20px;
+}
+
+.my-language-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 8px 8px 8px;
+  margin-top: 10px;
+  background-color: #f7f7f9;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.language-rule {
+  color: #dfe1e6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.frameworks,
+.skills {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.language-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    display: flex;
+    padding: 100px 120px;
+    padding-top: 0;
+    border-top-right-radius: 120px;
+  }
+
+  #about-section {
+    border-top-right-radius: 120px;
+  }
+
+  .language-container {
+    width: 55%;
+    padding-top: 80px;
+  }
+
+  .my-language-container {
+    display: inline;
+    margin-right: 10px;
+    background-color: #f7f7f9;
+    height: 90px;
+    width: 90px;
+  }
+
+  .my-language {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .frameworks,
+  .skills {
+    padding: 5px 0 5px 0;
+  }
+
+  .my-language-text {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .about {
+    width: 45%;
+  }
+
+  .language-header-container {
+    padding: 10px 10px;
+  }
+}
