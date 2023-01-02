@@ -1,7 +1,7 @@
-import React from "react";
-import "./Contact.css";
-import contactBg from "../Assets/background-images/contact-form-shapes-mobile.svg";
-import contactBgWeb from "../Assets/background-images/contact-form-background-image-web.svg";
+import React from 'react';
+import './Contact.css';
+import contactBg from '../Assets/background-images/contact-form-shapes-mobile.svg';
+import contactBgWeb from '../Assets/background-images/contact-form-background-image-web.svg';
 
 function Contact() {
   const css = `@media (max-width: 768px) {
@@ -40,7 +40,7 @@ function Contact() {
                   id="user-name"
                   name="user_name"
                   required
-                  maxlength="30"
+                  maxLength="30"
                 />
               </li>
               <li className="form-list">
@@ -58,13 +58,13 @@ function Contact() {
                   className="contact-text-area"
                   id="msg"
                   name="user_message"
-                  maxlength="500"
+                  maxLength="500"
                   required
                   placeholder="Leave a message here"
-                ></textarea>
+                />
               </li>
               <li className="contact-button-li">
-                <small className="error"></small>
+                <small className="error" />
                 <button className="btn contact-button" type="submit">
                   Get in touch
                 </button>

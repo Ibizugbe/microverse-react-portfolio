@@ -1,27 +1,27 @@
-import React from "react";
+import React from 'react';
 
-import "./Skills.css";
-import medium from "../Assets/Icons/medium-vector.svg";
-import linkedin from "../Assets/Icons/linkedin-vector.svg";
-import twitter from "../Assets/Icons/twitter-vector.svg";
-import github from "../Assets/Icons/github-vector.svg";
-import angelist from "../Assets/Icons/angelist-vector.svg";
-import resume from "../Assets/resume/my_Resume.pdf";
-import Accordion from "./Accordion";
-import accordionData from "../data/accordionData";
+import './Skills.css';
+import medium from '../Assets/Icons/medium-vector.svg';
+import linkedin from '../Assets/Icons/linkedin-vector.svg';
+import twitter from '../Assets/Icons/twitter-vector.svg';
+import github from '../Assets/Icons/github-vector.svg';
+import angelist from '../Assets/Icons/angelist-vector.svg';
+import resume from '../Assets/resume/my_Resume.pdf';
+import Accordion from './Accordion';
+import accordionData from '../data/accordionData';
 
 function Skills() {
   return (
-    <div class="about-container">
-      <div class="about">
-        <h1 class="about-header">About Myself</h1>
-        <h1 class="about-text">
+    <div className="about-container">
+      <div className="about">
+        <h1 className="about-header">About Myself</h1>
+        <h1 className="about-text">
           Hello I’m a software developer! I can help you build a product ,
           feature or website Look through some of my work and experience! If you
           like what you see and have a project you need coded, don’t hestiate to
           contact me.
         </h1>
-        <p class="connect">LET’S CONNECT</p>
+        <p className="connect">LET’S CONNECT</p>
         <ul className="connect-links animate__animated animate__bounce">
           <li>
             <a href="https://twitter.com/AbrahamIbizugbe">
@@ -49,16 +49,16 @@ function Skills() {
             </a>
           </li>
         </ul>
-        <a target="_blank" href={resume} download>
-          <button class="btn project-link" type="button">
+        <a target="_blank" href={resume} rel="noreferrer" download>
+          <button className="btn project-link" type="button">
             Get my resume
           </button>
         </a>
       </div>
-      <div class="language-container">
+      <div className="language-container">
         <div className="accordion">
           {accordionData.map(({ title, content }) => (
-            <Accordion title={title} content={content} />
+            <Accordion title={title} content={content} key="3" />
           ))}
         </div>
       </div>
