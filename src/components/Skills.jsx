@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 
 import "./Skills.css";
 import medium from "../Assets/Icons/medium-vector.svg";
