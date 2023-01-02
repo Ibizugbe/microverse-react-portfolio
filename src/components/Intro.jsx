@@ -1,12 +1,12 @@
-import React from "react";
-import "./Intro.css";
-import backgroundImage from "../Assets/background-images/background-header-web.svg";
-import backgroundImageMobile from "../Assets/background-images/header-shapes-mobile.svg";
-import medium from "../Assets/Icons/medium-vector.svg";
-import linkedin from "../Assets/Icons/linkedin-vector.svg";
-import twitter from "../Assets/Icons/twitter-vector.svg";
-import github from "../Assets/Icons/github-vector.svg";
-import angelist from "../Assets/Icons/angelist-vector.svg";
+import React from 'react';
+import './Intro.css';
+import backgroundImage from '../Assets/background-images/background-header-web.svg';
+import backgroundImageMobile from '../Assets/background-images/header-shapes-mobile.svg';
+import medium from '../Assets/Icons/medium-vector.svg';
+import linkedin from '../Assets/Icons/linkedin-vector.svg';
+import twitter from '../Assets/Icons/twitter-vector.svg';
+import github from '../Assets/Icons/github-vector.svg';
+import angelist from '../Assets/Icons/angelist-vector.svg';
 
 function Intro() {
   const css = `@media (max-width: 768px) {
