@@ -12,31 +12,19 @@ import tailwindImg from "../Assets/languages/tailwind.png";
 const accordionData = [
   {
     title: "Languages",
-    content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-    laborum cupiditate possimus labore, hic temporibus velit dicta earum
-    suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-    voluptatem.`,
+    content: `Ruby, HTML, CSS and Javascript`,
   },
   {
     title: "Frameworks",
-    content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-    reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-    quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-    pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-    quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-    Repudiandae, mollitia id reprehenderit a ab odit!`,
+    content: `Bootstrap, Tailwind, React, Rails`,
   },
   {
     title: "Skills",
-    content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-    quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-    dolor ut sequi minus iste? Quas?`,
+    content: `Remote Pair-Programming, Teamwork, Mentoring`,
   },
   {
     title: "Tools",
-    content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-    quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-    dolor ut sequi minus iste? Quas?`,
+    content: `Git, GitHub, Heroku, Netlify, Mobile/Responsive Development, RSpec, TDD, Chrome Dev Tools `,
   },
 ];
 
