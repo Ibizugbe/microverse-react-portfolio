@@ -24,27 +24,27 @@ function Skills() {
         <p className="connect">LET’S CONNECT</p>
         <ul className="connect-links animate__animated animate__bounce">
           <li>
-            <a href="https://twitter.com/AbrahamIbizugbe">
+            <a href="https://twitter.com/AbrahamIbizugbe" target="_blank" rel="noreferrer">
               <img src={twitter} alt="twitter" className="social-icons" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/abrahamibizugbe/">
+            <a href="https://www.linkedin.com/in/abrahamibizugbe/" target="_blank" rel="noreferrer">
               <img src={linkedin} alt="linkedin" className="social-icons" />
             </a>
           </li>
           <li>
-            <a href="https://medium.com/@abrahamibizugbe">
+            <a href="https://medium.com/@abrahamibizugbe" target="_blank" rel="noreferrer">
               <img src={medium} alt="medium" className="social-icons" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/Ibizugbe">
+            <a href="https://github.com/Ibizugbe" target="_blank" rel="noreferrer">
               <img src={github} alt="gitHub" className="social-icons" />
             </a>
           </li>
           <li>
-            <a href="https://angel.co/u/abraham-ibizugbe">
+            <a href="https://angel.co/u/abraham-ibizugbe" target="_blank" rel="noreferrer">
               <img src={angelist} alt="angelist" className="social-icons" />
             </a>
           </li>

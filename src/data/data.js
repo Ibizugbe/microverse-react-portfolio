@@ -1,5 +1,5 @@
 import AwesomeBook from '../Assets/projects/awesome-book.png';
-import CarValley from '../Assets/projects/car-valley.png';
+// import CarValley from '../Assets/projects/car-valley.png';
 import MathMagician from '../Assets/projects/math-magician.png';
 import SpaceTravellers from '../Assets/projects/space-travellers.png';
 import TodoList from '../Assets/projects/todo.png';
@@ -54,7 +54,10 @@ const data = [
   //   github: 'https://github.com/Ibizugbe/car-valley-backend',
   //   live: 'https://github.com/Ibizugbe/car-valley-backend',
   //   description:
-  //     'Car valley is a full-stack web application that allows its users to book cars online, the frontend of the application was built with React js and Redux and we used Ruby on Rails in the backend to be able to generate at the end an API that the frontend uses',
+  //     'Car valley is a full-stack web application that
+  //  allows its users to book cars online, the frontend of the application was built
+  // with React js and Redux and we used Ruby on Rails in the backend
+  //  to be able to generate at the end an API that the frontend uses',
   //   skills: ['HTML', 'CSS', 'React', 'Redux', 'Ruby', 'Rails'],
   // },
   {

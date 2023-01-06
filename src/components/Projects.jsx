@@ -36,7 +36,7 @@ const Projects = () => {
               ))}
             </div>
             <div className="flex">
-              <a href={items.live}>
+              <a href={items.live} target="_blank" rel="noreferrer">
                 <motion.button
                   className="btn"
                   whileHover={{ scale: 1.1 }}
@@ -47,7 +47,7 @@ const Projects = () => {
                 </motion.button>
               </a>
 
-              <a href={items.github}>
+              <a href={items.github} target="_blank" rel="noreferrer">
                 <motion.button
                   className="btn ml-5"
                   whileHover={{ scale: 1.1 }}
