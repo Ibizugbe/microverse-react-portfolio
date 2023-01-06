@@ -18,8 +18,8 @@ const Projects = () => {
         <motion.div
           className="project rounded-xl grid md:grid-cols-2 grid-cols-1 p-9 bg-white mt-5 md:mt-48"
           data-aos="fade-up"
-          data-aos-duration="3000"
-          whileHover={{ scale: 1.1 }}
+          data-aos-duration="500"
+          whileHover={{ scale: 1.05 }}
           key="1"
         >
           <div className="project-image">
@@ -36,7 +36,7 @@ const Projects = () => {
               ))}
             </div>
             <div className="flex">
-              <a href={items.live}>
+              <a href={items.live} target="_blank" rel="noreferrer">
                 <motion.button
                   className="btn"
                   whileHover={{ scale: 1.1 }}
@@ -47,7 +47,7 @@ const Projects = () => {
                 </motion.button>
               </a>
 
-              <a href={items.github}>
+              <a href={items.github} target="_blank" rel="noreferrer">
                 <motion.button
                   className="btn ml-5"
                   whileHover={{ scale: 1.1 }}

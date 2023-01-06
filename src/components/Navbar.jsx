@@ -18,27 +18,32 @@ function Navbar() {
   };
   return (
     <nav className="nav">
-      <Link to="intro" smooth duration={500} className="nav__brand">
+      <Link to="intro" smooth duration={1500} className="nav__brand">
         AIO
       </Link>
       <ul className={active}>
         <li className="nav__item">
-          <Link to="intro" smooth duration={500}>
+          <Link to="intro" smooth duration={1500}>
             Home
           </Link>
         </li>
         <li className="nav__item">
-          <Link to="about" smooth duration={500}>
+          <Link to="about" smooth duration={1500}>
             About
           </Link>
         </li>
         <li className="nav__item">
-          <Link to="projects" smooth duration={500}>
+          <Link to="contact-me" smooth duration={1500}>
+            Contact Me
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="projects" smooth duration={1500}>
             Projects
           </Link>
         </li>
         <li className="nav__item">
-          <Link to="skills" smooth duration={500}>
+          <Link to="skills" smooth duration={1500}>
             Skills
           </Link>
         </li>
