@@ -3,19 +3,19 @@ import CarValley from '../Assets/projects/car-valley.png';
 import MathMagician from '../Assets/projects/math-magician.png';
 import SpaceTravellers from '../Assets/projects/space-travellers.png';
 import TodoList from '../Assets/projects/todo.png';
-import Bookstore from '../Assets/projects/bookstore.png';
+import Pokemon from '../Assets/projects/pokemon.png';
 import CovidStat from '../Assets/projects/covid-stat.png';
 
 const data = [
   {
     id: 1,
-    name: 'Bookstore',
-    image: Bookstore,
-    github: 'https://github.com/Ibizugbe/bookstore',
-    live: 'https://book-store-97.netlify.app/',
+    name: 'Pokeverse',
+    image: Pokemon,
+    github: 'https://github.com/Ibizugbe/Pokeverse',
+    live: 'https://rex-9.github.io/Pokeverse/',
     description:
-      'Bookstore is an SPA made for ethusiastic readers. it is a content management app that helps you track your progress on your reading journey. It is built using React.js',
-    skills: ['HTML', 'CSS', 'Redux', 'React'],
+      'The amazing Pokeverse displays the list of the Pokemons and their abilities fetched from the Pokeapi and Users can like and comment about the pokemons. Like and comment features are provided by the InvolvementApi',
+    skills: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
@@ -54,10 +54,7 @@ const data = [
     github: 'https://github.com/Ibizugbe/car-valley-backend',
     live: 'https://github.com/Ibizugbe/car-valley-backend',
     description:
-      'Car valley is a full-stack web application that
-   allows its users to book cars online, the frontend of the application was built
-  with React js and Redux and we used Ruby on Rails in the backend
-   to be able to generate at the end an API that the frontend uses',
+      'Car valley is a full-stack web application that allows its users to book cars online, the frontend of the application was built with React js and Redux and we used Ruby on Rails in the backend to be able to generate at the end an API that the frontend uses',
     skills: ['HTML', 'CSS', 'React', 'Redux', 'Ruby', 'Rails'],
   },
   {
